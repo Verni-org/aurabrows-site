@@ -5,6 +5,7 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import CourseSidebar from "@/components/CourseSidebar";
 import { IconCheck } from "@/components/icons";
 import { courses, getCourseBySlug, levelLabels } from "@/data/courses";
+import { courseImages } from "@/lib/images";
 
 export function generateStaticParams() {
   return courses.map((c) => ({ slug: c.slug }));
@@ -44,6 +45,7 @@ export default async function CourseDetailPage({
   if (!course) notFound();
 
   const paragraphs = course.fullDescription.split("\n\n");
+  const courseImage = courseImages[course.id];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -94,6 +96,10 @@ export default async function CourseDetailPage({
             </div>
 
             <PhotoPlaceholder
+              src={courseImage?.src}
+              alt={courseImage?.alt ?? course.name}
+              objectPosition={courseImage?.objectPosition}
+              sizes="(max-width: 1024px) 100vw, 720px"
               label="Video — uvodna reč"
               className="aspect-video mb-14"
             />

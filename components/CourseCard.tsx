@@ -1,16 +1,25 @@
 import Link from "next/link";
 import PhotoPlaceholder from "./PhotoPlaceholder";
 import { Course, formatPrice, levelLabels } from "@/data/courses";
+import { courseImages } from "@/lib/images";
 
 export default function CourseCard({ course }: { course: Course }) {
   const isLive = course.type !== "online";
+  const image = courseImages[course.id];
 
   return (
     <Link
       href={`/kursevi/${course.slug}`}
       className="group card-border bg-bg-card overflow-hidden flex flex-col transition-transform hover:-translate-y-1"
     >
-      <PhotoPlaceholder label={`Foto — ${course.name}`} className="aspect-[4/3]" />
+      <PhotoPlaceholder
+        src={image?.src}
+        alt={image?.alt ?? course.name}
+        objectPosition={image?.objectPosition}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        label={`Foto — ${course.name}`}
+        className="aspect-[4/3]"
+      />
       <div className="p-6 flex flex-col gap-3 flex-1">
         <span className="label !text-[10px]">{levelLabels[course.level]}</span>
         <h3 className="text-2xl font-semibold leading-snug">{course.name}</h3>

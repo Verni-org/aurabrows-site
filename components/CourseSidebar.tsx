@@ -5,14 +5,23 @@ import PhotoPlaceholder from "./PhotoPlaceholder";
 import CheckoutModal from "./CheckoutModal";
 import { IconLock } from "./icons";
 import { Course, formatPrice, levelLabels } from "@/data/courses";
+import { courseImages } from "@/lib/images";
 
 export default function CourseSidebar({ course }: { course: Course }) {
   const [open, setOpen] = useState(false);
   const isLive = course.type !== "online";
+  const image = courseImages[course.id];
 
   return (
     <aside className="lg:sticky lg:top-28 h-fit card-border bg-bg-card overflow-hidden">
-      <PhotoPlaceholder label={`Foto — ${course.name}`} className="aspect-[4/3]" />
+      <PhotoPlaceholder
+        src={image?.src}
+        alt={image?.alt ?? course.name}
+        objectPosition={image?.objectPosition}
+        sizes="(max-width: 1024px) 100vw, 380px"
+        label={`Foto — ${course.name}`}
+        className="aspect-[4/3]"
+      />
       <div className="p-6 flex flex-col gap-5">
         <div>
           {isLive && course.priceIndividual ? (

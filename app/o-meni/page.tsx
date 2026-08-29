@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
+import { siteImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "O meni",
@@ -21,7 +22,14 @@ export default function OMeniPage() {
     <div className="section-pad">
       <div className="container-aura">
         <div className="grid md:grid-cols-2 gap-14 items-center mb-24">
-          <PhotoPlaceholder label="Foto — Saška, portret" className="aspect-[4/5]" />
+          <PhotoPlaceholder
+            src={siteImages.portrait.src}
+            alt={siteImages.portrait.alt}
+            objectPosition={siteImages.portrait.objectPosition}
+            priority
+            sizes="(max-width: 768px) 100vw, 40vw"
+            className="aspect-[4/5]"
+          />
           <div>
             <p className="label mb-6">O meni</p>
             <h1 className="text-5xl font-semibold leading-tight mb-6">

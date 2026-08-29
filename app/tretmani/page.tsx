@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { treatments } from "@/data/treatments";
 import { siteConfig } from "@/data/site";
+import { treatmentImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Tretmani",
@@ -29,7 +30,10 @@ export default function TretmaniPage() {
         </div>
 
         <div className="flex flex-col gap-24">
-          {treatments.map((t, i) => (
+          {treatments.map((t, i) => {
+            const image = treatmentImages[t.id];
+
+            return (
             <div
               key={t.id}
               className={`grid md:grid-cols-2 gap-12 items-center ${
@@ -38,6 +42,10 @@ export default function TretmaniPage() {
             >
               <div className={i % 2 === 1 ? "[direction:ltr]" : ""}>
                 <PhotoPlaceholder
+                  src={image?.src}
+                  alt={image?.alt ?? t.name}
+                  objectPosition={image?.objectPosition}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   label={`Foto — ${t.name}`}
                   className="aspect-[4/3]"
                 />
@@ -65,7 +73,8 @@ export default function TretmaniPage() {
                 </a>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-24 card-border bg-bg-card p-10 md:p-16 text-center max-w-2xl mx-auto">

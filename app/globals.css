@@ -126,13 +126,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: repeating-linear-gradient(
-    135deg,
-    var(--bg-card),
-    var(--bg-card) 10px,
-    #2a241b 10px,
-    #2a241b 20px
-  );
+  overflow: hidden;
+  background: #2a241b;
   border: 1px solid var(--border);
   color: var(--text-secondary);
   font-size: 11px;

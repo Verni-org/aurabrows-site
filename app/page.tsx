@@ -5,6 +5,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import { IconInfinity, IconCertificate, IconCommunity, IconSteps } from "@/components/icons";
 import { courses } from "@/data/courses";
 import { testimonials } from "@/data/testimonials";
+import { siteImages } from "@/lib/images";
 
 const previewSlugs = [
   "aurabrows-bazna-obuka",
@@ -72,7 +73,11 @@ export default function Home() {
             </div>
           </div>
           <PhotoPlaceholder
-            label="Foto / video — hero"
+            src={siteImages.hero.src}
+            alt={siteImages.hero.alt}
+            objectPosition={siteImages.hero.objectPosition}
+            priority
+            sizes="(max-width: 768px) 100vw, 45vw"
             className="aspect-[4/5] md:aspect-[4/5]"
           />
         </div>
@@ -105,7 +110,13 @@ export default function Home() {
       {/* 3. O MENI */}
       <section className="section-pad">
         <div className="container-aura grid md:grid-cols-2 gap-14 items-center">
-          <PhotoPlaceholder label="Foto — Saška, portret" className="aspect-[4/5]" />
+          <PhotoPlaceholder
+            src={siteImages.portrait.src}
+            alt={siteImages.portrait.alt}
+            objectPosition={siteImages.portrait.objectPosition}
+            sizes="(max-width: 768px) 100vw, 40vw"
+            className="aspect-[4/5]"
+          />
           <div>
             <p className="label mb-6">Dobrodošli u Aura Brows</p>
             <h2 className="text-4xl font-semibold leading-tight mb-6">
