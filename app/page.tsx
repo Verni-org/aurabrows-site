@@ -78,7 +78,7 @@ export default function Home() {
             objectPosition={siteImages.hero.objectPosition}
             priority
             sizes="(max-width: 768px) 100vw, 45vw"
-            className="aspect-[4/5] md:aspect-[4/5]"
+            ratio="4 / 5"
           />
         </div>
         <div className="hidden md:flex justify-center pb-10">
@@ -115,7 +115,7 @@ export default function Home() {
             alt={siteImages.portrait.alt}
             objectPosition={siteImages.portrait.objectPosition}
             sizes="(max-width: 768px) 100vw, 40vw"
-            className="aspect-[4/5]"
+            ratio="4 / 5"
           />
           <div>
             <p className="label mb-6">Dobrodošli u Aura Brows</p>

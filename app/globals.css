@@ -29,6 +29,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: calc(100% + 6px);
 }
 
 body {
@@ -44,7 +45,7 @@ body {
 }
 
 .label {
-  font-size: 12px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   color: var(--text-secondary);
@@ -65,7 +66,7 @@ body {
   color: #1a1611;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 13px;
+  font-size: 19px;
   font-weight: 600;
   padding: 16px 32px;
   border-radius: 4px;
@@ -88,7 +89,7 @@ body {
   border: 1px solid var(--accent-gold);
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 13px;
+  font-size: 19px;
   font-weight: 600;
   padding: 16px 32px;
   border-radius: 4px;
@@ -130,7 +131,7 @@ body {
   background: #2a241b;
   border: 1px solid var(--border);
   color: var(--text-secondary);
-  font-size: 11px;
+  font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   text-align: center;

@@ -43,7 +43,7 @@ export default function OMeniPage() {
             objectPosition={siteImages.portrait.objectPosition}
             priority
             sizes="(max-width: 768px) 100vw, 40vw"
-            className="aspect-[4/5]"
+            ratio="4 / 5"
           />
           <div>
             <p className="label mb-6">O meni</p>

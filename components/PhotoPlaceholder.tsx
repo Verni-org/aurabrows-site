@@ -8,6 +8,7 @@ type PhotoPlaceholderProps = {
   sizes?: string;
   priority?: boolean;
   objectPosition?: string;
+  ratio?: string;
 };
 
 export default function PhotoPlaceholder({
@@ -18,9 +19,13 @@ export default function PhotoPlaceholder({
   sizes = "100vw",
   priority = false,
   objectPosition = "center",
+  ratio = "4 / 5",
 }: PhotoPlaceholderProps) {
   return (
-    <div className={`photo-placeholder ${className}`}>
+    <div
+      className={`photo-placeholder ${className}`}
+      style={{ aspectRatio: ratio }}
+    >
       {src ? (
         <Image
           src={src}

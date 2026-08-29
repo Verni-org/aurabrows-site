@@ -18,7 +18,7 @@ export default function CourseCard({ course }: { course: Course }) {
         objectPosition={image?.objectPosition}
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         label={`Foto — ${course.name}`}
-        className="aspect-[4/3]"
+        ratio="4 / 3"
       />
       <div className="p-6 flex flex-col gap-3 flex-1">
         <span className="label !text-[10px]">{levelLabels[course.level]}</span>

@@ -55,7 +55,7 @@ export default function TretmaniPage() {
                   objectPosition={image?.objectPosition}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   label={`Foto — ${t.name}`}
-                  className="aspect-[4/3]"
+                  ratio="4 / 3"
                 />
               </div>
               <div className={i % 2 === 1 ? "[direction:ltr]" : ""}>

@@ -109,7 +109,8 @@ export default async function CourseDetailPage({
               objectPosition={courseImage?.objectPosition}
               sizes="(max-width: 1024px) 100vw, 720px"
               label="Video — uvodna reč"
-              className="aspect-video mb-14"
+              ratio="16 / 9"
+              className="mb-14"
             />
 
             <div className="mb-14">

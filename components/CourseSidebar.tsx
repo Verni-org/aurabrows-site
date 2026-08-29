@@ -20,7 +20,7 @@ export default function CourseSidebar({ course }: { course: Course }) {
         objectPosition={image?.objectPosition}
         sizes="(max-width: 1024px) 100vw, 380px"
         label={`Foto — ${course.name}`}
-        className="aspect-[4/3]"
+        ratio="4 / 3"
       />
       <div className="p-6 flex flex-col gap-5">
         <div>
