@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import NewsletterForm from "@/components/NewsletterForm";
 import { siteConfig } from "@/data/site";
+import { buildPageMetadata } from "@/lib/metadata";
 import { getContactPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
     "Piši nam za sva pitanja o kursevima, edukacijama i tretmanima. Beograd, Srbija.",
+  ...buildPageMetadata({
+    title: "Kontakt | AuraBrows by Saška",
+    description:
+      "Piši nam za sva pitanja o kursevima, edukacijama i tretmanima. Beograd, Srbija.",
+    path: "/kontakt",
+    image: "https://aurabrowsbysaska.rs/images/site/hero-edukacija.jpeg",
+  }),
 };
 
 export default function KontaktPage() {

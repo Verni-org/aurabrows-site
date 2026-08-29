@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { siteImages } from "@/lib/images";
+import { buildPageMetadata } from "@/lib/metadata";
 import { getPersonSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "O meni",
   description:
     "Aleksandra Stojilković — Saška. Osnivač Studija lepote Saška, edukator za obrve i kreator autorske tehnike AuraBrows.",
+  ...buildPageMetadata({
+    title: "O meni | AuraBrows by Saška",
+    description:
+      "Aleksandra Stojilković — Saška. Osnivač Studija lepote Saška, edukator za obrve i kreator autorske tehnike AuraBrows.",
+    path: "/o-meni",
+    image: "https://aurabrowsbysaska.rs/images/site/saska-portret.jpeg",
+  }),
 };
 
 const experience = [

@@ -7,6 +7,7 @@ import {
   getOrganizationSchema,
   getWebsiteSchema,
 } from "@/lib/structured-data";
+import { buildPageMetadata } from "@/lib/metadata";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -23,14 +24,11 @@ export const metadata: Metadata = {
   },
   description:
     "Naučite zanat puder obrva i oblikovanja od nule kroz premium video kurseve i edukacije uživo. Doživotni pristup, sertifikat i mentorstvo uz svaki program.",
-  openGraph: {
+  ...buildPageMetadata({
     title: "AuraBrows by Saška — Online akademija obrva",
     description:
       "Naučite zanat puder obrva i oblikovanja od nule kroz premium video kurseve i edukacije uživo.",
-    locale: "sr_RS",
-    type: "website",
-    siteName: "AuraBrows by Saška",
-  },
+  }),
 };
 
 export default function RootLayout({

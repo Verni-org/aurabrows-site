@@ -6,6 +6,7 @@ import CourseSidebar from "@/components/CourseSidebar";
 import { IconCheck } from "@/components/icons";
 import { courses, getCourseBySlug, levelLabels } from "@/data/courses";
 import { courseImages } from "@/lib/images";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export function generateStaticParams() {
   return courses.map((c) => ({ slug: c.slug }));
@@ -19,13 +20,20 @@ export async function generateMetadata({
   const { slug } = await params;
   const course = getCourseBySlug(slug);
   if (!course) return {};
+  const courseImage = courseImages[course.id];
+  const image = courseImage
+    ? `https://aurabrowsbysaska.rs${courseImage.src}`
+    : undefined;
+
   return {
     title: course.name,
     description: course.shortDescription,
-    openGraph: {
-      title: course.name,
+    ...buildPageMetadata({
+      title: `${course.name} | AuraBrows by Saška`,
       description: course.shortDescription,
-    },
+      path: `/kursevi/${course.slug}`,
+      image,
+    }),
   };
 }
 

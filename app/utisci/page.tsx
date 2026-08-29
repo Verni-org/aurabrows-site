@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import TestimonialCard from "@/components/TestimonialCard";
 import { testimonials } from "@/data/testimonials";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Utisci polaznica",
   description:
     "Pročitaj šta polaznice kažu o AuraBrows edukacijama i online kursevima.",
+  ...buildPageMetadata({
+    title: "Utisci polaznica | AuraBrows by Saška",
+    description:
+      "Pročitaj šta polaznice kažu o AuraBrows edukacijama i online kursevima.",
+    path: "/utisci",
+    image: "https://aurabrowsbysaska.rs/images/site/sertifikat-polaznica.jpeg",
+  }),
 };
 
 export default function UtisciPage() {
