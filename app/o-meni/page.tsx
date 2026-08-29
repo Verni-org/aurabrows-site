@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import { siteImages } from "@/lib/images";
+import { getPersonSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "O meni",
@@ -18,8 +19,14 @@ const experience = [
 ];
 
 export default function OMeniPage() {
+  const personSchema = getPersonSchema();
+
   return (
     <div className="section-pad">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <div className="container-aura">
         <div className="grid md:grid-cols-2 gap-14 items-center mb-24">
           <PhotoPlaceholder

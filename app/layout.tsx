@@ -3,6 +3,10 @@ import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import {
+  getOrganizationSchema,
+  getWebsiteSchema,
+} from "@/lib/structured-data";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -34,8 +38,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = [getOrganizationSchema(), getWebsiteSchema()];
+
   return (
     <html lang="sr" className={`${cormorant.variable} h-full antialiased`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>

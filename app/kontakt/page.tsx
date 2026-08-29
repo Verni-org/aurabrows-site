@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import NewsletterForm from "@/components/NewsletterForm";
 import { siteConfig } from "@/data/site";
+import { getContactPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -10,8 +11,14 @@ export const metadata: Metadata = {
 };
 
 export default function KontaktPage() {
+  const contactSchema = getContactPageSchema();
+
   return (
     <div className="section-pad">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       <div className="container-aura">
         <div className="text-center max-w-xl mx-auto mb-16">
           <p className="label mb-6">Kontakt</p>
