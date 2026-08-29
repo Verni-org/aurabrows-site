@@ -38,6 +38,8 @@ yarn-error.log*
 
 # local form/order storage (Faza 1 dev fallback)
 /.data/
+/public/images/imgs/
+.idea/vcs.xml
 
 # typescript
 *.tsbuildinfo
