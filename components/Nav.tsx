@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const links = [
@@ -16,18 +15,12 @@ const links = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   return (
     <header
@@ -50,7 +43,8 @@ export default function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="label !text-[12px] hover:text-accent-gold transition-colors"
+              onClick={() => setOpen(false)}
+              className="label !text-[13px] hover:text-accent-gold transition-colors"
             >
               {link.label}
             </Link>
@@ -92,6 +86,7 @@ export default function Nav() {
             <Link
               key={link.href}
               href={link.href}
+              onClick={() => setOpen(false)}
               className="label !text-[13px] hover:text-accent-gold transition-colors"
             >
               {link.label}

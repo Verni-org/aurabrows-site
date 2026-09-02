@@ -66,7 +66,7 @@ export default function Footer() {
                 Instagram {siteConfig.instagramHandle}
               </a>
             </li>
-            <li>{siteConfig.location}</li>
+            <li>Niš</li>
           </ul>
         </div>
       </div>

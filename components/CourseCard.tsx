@@ -34,8 +34,8 @@ export default function CourseCard({ course }: { course: Course }) {
           </div>
         )}
 
-        <div className="flex items-end justify-between pt-4 border-t border-border mt-2">
-          <div>
+        <div className="flex items-end justify-between gap-4 pt-4 border-t border-border mt-2">
+          <div className="min-h-[3.5rem] flex flex-col justify-end">
             {isLive && (
               <span className="block text-[11px] text-text-secondary uppercase tracking-wider mb-0.5">
                 Grupna cena

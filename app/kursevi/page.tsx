@@ -28,6 +28,7 @@ export default function KurseviPage() {
           <h1 className="text-5xl font-semibold mb-5">
             Izaberi svoj <span className="accent">put</span>
           </h1>
+          <div className="w-20 h-px bg-accent-gold/60 mx-auto mb-5" />
           <p className="text-text-secondary">
             Doživotni pristup, sertifikat i privatna zajednica uz svaki kurs.
           </p>

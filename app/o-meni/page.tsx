@@ -51,6 +51,7 @@ export default function OMeniPage() {
               Ja sam Aleksandra Stojilković,{" "}
               <span className="accent">poznatija kao Saška.</span>
             </h1>
+            <div className="w-20 h-px bg-accent-gold/60 mb-6" />
             <div className="flex flex-col gap-4 text-text-secondary">
               <p>
                 Osnivač sam Studija lepote Saška, edukator za obrve i kreator
@@ -65,7 +66,7 @@ export default function OMeniPage() {
               <p>
                 Danas, kroz svoj studio i AuraBrows edukacije, spajam
                 iskustvo, estetiku i individualan pristup. Verujem da dobro
-                oblikovane obrve nisu samo estetski detalj — one naglašavaju
+                oblikovane obrve nisu samo estetski detalj. One naglašavaju
                 prirodnu lepotu, vraćaju samopouzdanje i stvaraju harmoniju
                 lica.
               </p>
@@ -82,15 +83,20 @@ export default function OMeniPage() {
 
         <div className="mb-24">
           <h2 className="text-3xl font-semibold mb-10 text-center">
-            Iskustvo koje uliva <span className="accent">poverenje</span>
+            Iskustvo i <span className="accent">rezultati</span>
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            {experience.map((item) => (
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-4">
+            {experience.map((item, index) => (
               <div
                 key={item}
-                className="card-border bg-bg-card p-6 text-sm text-text-secondary"
+                className="card-border bg-bg-card p-5 md:p-6 flex items-start gap-4"
               >
-                {item}
+                <span className="text-accent-gold text-lg font-semibold leading-none pt-0.5">
+                  0{index + 1}
+                </span>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  {item}
+                </p>
               </div>
             ))}
           </div>
@@ -101,9 +107,10 @@ export default function OMeniPage() {
             Verujem da prava transformacija ne počinje{" "}
             <span className="accent">promenom izgleda.</span>
           </h2>
+          <div className="w-20 h-px bg-accent-gold/60 mx-auto mb-5" />
           <p className="text-text-secondary mb-10">
             Počinje onog trenutka kada se spoje znanje, iskustvo i poverenje.
-            Bilo da dolazite kao klijent ili student, moj cilj je isti — da
+            Bilo da dolazite kao klijent ili student, moj cilj je isti, da
             iz studija izađete sigurniji, zadovoljniji i sa osećajem da ste
             napravili pravi izbor.
           </p>

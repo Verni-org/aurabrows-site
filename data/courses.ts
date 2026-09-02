@@ -47,7 +47,7 @@ export const courses: Course[] = [
     shortDescription:
       "Dva dana edukacije uživo, autorska AuraBrows tehnika hiperrealističnih obrva, kompletan materijal i dva meseca premium mentorstva.",
     fullDescription:
-      "Ne dobijaš samo edukaciju. Dobijaš sistem koji te vodi do samostalnog rada.\n\nNakon godina iskustva, rada sa klijentima, edukovanja studenata i praćenja njihovih izazova, kreirala sam potpuno novi i unapređeni AuraBrows program. Ovaj program nastao je iz prakse — iz svega što sam primetila da studentima nedostaje nakon klasičnih edukacija.\n\nNije dovoljno da tehniku vidiš jednom. Potrebno je da je razumeš, ponoviš, dobiješ korekciju i imaš podršku onda kada počneš samostalno da radiš. Zato AuraBrows bazna obuka obuhvata edukaciju uživo, detaljne video kurseve i dva meseca mog intenzivnog mentorstva.\n\nCilj nije da nakon dva dana odeš kući sa sertifikatom i ostaneš sama. Cilj je da za dva meseca izgradiš znanje, preciznost i sigurnost potrebne za samostalan rad.",
+      "Ne dobijaš samo edukaciju. Dobijaš sistem koji te vodi do samostalnog rada.\n\nNakon godina iskustva, rada sa klijentima, edukovanja studenata i praćenja njihovih izazova, kreirala sam potpuno novi i unapređeni AuraBrows program. Ovaj program nastao je iz prakse, iz svega što sam primetila da studentima nedostaje nakon klasičnih edukacija.\n\nNije dovoljno da tehniku vidiš jednom. Potrebno je da je razumeš, ponoviš, dobiješ korekciju i imaš podršku onda kada počneš samostalno da radiš. Zato AuraBrows bazna obuka obuhvata edukaciju uživo, detaljne video kurseve i dva meseca mog intenzivnog mentorstva.\n\nCilj nije da nakon dva dana odeš kući sa sertifikatom i ostaneš sama. Cilj je da za dva meseca izgradiš znanje, preciznost i sigurnost potrebne za samostalan rad.",
     type: "uzivo-bazna",
     level: "svi",
     price: 169650,
@@ -60,7 +60,7 @@ export const courses: Course[] = [
       "Dva dana edukacije uživo u maloj grupi (do 3 studentkinje)",
       "Kompletan materijal za edukaciju, dovoljan za preko 50 tretmana",
       "Pristup kursu Savršena simetrija obrva",
-      "Pristup kursevima Rad na modelu — normalna koža, masna koža i ručno senčenje",
+      "Pristup kursevima Rad na modelu: normalna koža, masna koža i ručno senčenje",
       "Pristup kursu Lateks vežbe i pravilno držanje alata",
       "Pristup kursu Različiti položaji i rasporedi dlačica (Spine 3, 5, 6, 5–6)",
       "Bonus kurs fotografisanja i sređivanja radova",
@@ -72,21 +72,21 @@ export const courses: Course[] = [
       {
         number: 1,
         title:
-          "Prvi dan — teorija i rad na lateksu: oblikovanje, teorija boja, tipovi kože, higijena, držanje alata, kontrola pritiska i dubine",
+          "Prvi dan: teorija i rad na lateksu, oblikovanje, teorija boja, tipovi kože, higijena, držanje alata, kontrola pritiska i dubine",
       },
       {
         number: 2,
         title:
-          "Drugi dan — rad na živom modelu uz stalni nadzor, od konsultacije do završnog rezultata",
+          "Drugi dan: rad na živom modelu uz stalni nadzor, od konsultacije do završnog rezultata",
       },
       {
         number: 3,
-        title: "Online video kursevi — kompletan bonus paket sa 4 meseca pristupa",
+        title: "Online video kursevi: kompletan bonus paket sa 4 meseca pristupa",
       },
       {
         number: 4,
         title:
-          "Dva meseca premium mentorstva — svakodnevna podrška, analiza radova i nedeljni Zoom sastanci",
+          "Dva meseca premium mentorstva: svakodnevna podrška, analiza radova i nedeljni Zoom sastanci",
       },
     ],
     forWhom: [
@@ -106,7 +106,7 @@ export const courses: Course[] = [
     slug: "puder-obrve-bazna-obuka",
     name: "Puder obrve bazna obuka",
     shortDescription:
-      "Sistem koji te vodi od prvog pokreta mašinicom do sigurnog rada na klijentima — sa mašinicom i pigmentima u ceni.",
+      "Sistem koji te vodi od prvog pokreta mašinicom do sigurnog rada na klijentima, sa mašinicom i pigmentima u ceni.",
     fullDescription:
       "Ne dobijaš samo edukaciju. Dobijaš sistem koji te vodi od prvog pokreta mašinicom do sigurnog rada na klijentima.\n\nNakon godina iskustva u radu sa klijentima, edukovanja studenata i praćenja izazova sa kojima se susreću nakon završenih obuka, kreirala sam unapređeni program bazne edukacije za puder obrve. Nastao je iz stvarnog rada, pitanja mojih studenata i grešaka koje se najčešće ponavljaju.\n\nPotrebno je da razumeš kako mašinica radi, razviješ pravilan pokret, naučiš da kontrolišeš pritisak i postepeno izgradiš osećaj za kožu, pigment i intenzitet senčenja. Cilj nije da nakon edukacije odeš kući samo sa sertifikatom, već da stekneš znanje, praktičnu sigurnost i podršku za samostalan rad i prve klijente.",
     type: "uzivo-bazna",
@@ -119,11 +119,11 @@ export const courses: Course[] = [
     hasRatePayment: true,
     includes: [
       "Dva dana edukacije uživo u maloj grupi (do 3 studentkinje)",
-      "Mašinicu za trajnu šminku — ostaje tebi",
+      "Mašinicu za trajnu šminku, koja ostaje tebi",
       "Pigmente za puder tehniku",
       "Kompletan materijal za praktičan rad",
       "Pristup kursu Savršena simetrija obrva",
-      "Pristup kursu Lateks vežbe — pravilno držanje mašinice",
+      "Pristup kursu Lateks vežbe: pravilno držanje mašinice",
       "Bonus kurs fotografisanja i sređivanja radova",
       "Dva meseca premium mentorstva sa nedeljnim Zoom sastancima",
       "Pristup zatvorenoj WhatsApp grupi polaznica",
@@ -133,21 +133,21 @@ export const courses: Course[] = [
       {
         number: 1,
         title:
-          "Prvi dan — teorija, upoznavanje sa mašinicom i rad na lateksu: pigmenti, priprema kože, kontrola pritiska i brzine, građenje intenziteta",
+          "Prvi dan: teorija, upoznavanje sa mašinicom i rad na lateksu, pigmenti, priprema kože, kontrola pritiska i brzine, građenje intenziteta",
       },
       {
         number: 2,
         title:
-          "Drugi dan — rad na živom modelu, od procene kože do nege nakon tretmana",
+          "Drugi dan: rad na živom modelu, od procene kože do nege nakon tretmana",
       },
       {
         number: 3,
-        title: "Online video kursevi — bonus paket sa 4 meseca pristupa",
+        title: "Online video kursevi: bonus paket sa 4 meseca pristupa",
       },
       {
         number: 4,
         title:
-          "Dva meseca premium mentorstva — WhatsApp grupa, analiza radova i nedeljni Zoom sastanci",
+          "Dva meseca premium mentorstva: WhatsApp grupa, analiza radova i nedeljni Zoom sastanci",
       },
     ],
     forWhom: [
@@ -168,7 +168,7 @@ export const courses: Course[] = [
     slug: "jednodnevno-aurabrows-usavrsavanje",
     name: "Jednodnevno AuraBrows usavršavanje",
     shortDescription:
-      "Jedan dan pripremljen prema tvom znanju, radu i potrebama — za artiste koji žele da isprave konkretne greške i dobiju veću sigurnost.",
+      "Jedan dan pripremljen prema tvom znanju, radu i potrebama, za artiste koji žele da isprave konkretne greške i dobiju veću sigurnost.",
     fullDescription:
       "AuraBrows jednodnevno usavršavanje namenjeno je artistima koji već imaju osnovno znanje i žele da unaprede tehniku, isprave konkretne greške i dobiju veću sigurnost u radu.\n\nOvo nije unapred pripremljena edukacija koja je ista za svakoga. Pre zakazivanja obavezno mi šalješ svoje radove, nakon čega se čujemo i razgovaramo o izazovima sa kojima se susrećeš, nesigurnostima koje imaš i rezultatima koje želiš da postigneš.\n\nNa osnovu tog razgovora i analize tvojih radova pripremam sadržaj usavršavanja prema tvojim potrebama, kako bismo maksimalno iskoristile vreme koje imamo. Cilj nije samo da tog dana uradiš bolji rad, već da razumeš gde si grešila, kako to da ispraviš i kako da isti kvalitet ponoviš i nakon usavršavanja.",
     type: "uzivo-usavrsavanje",
@@ -191,12 +191,12 @@ export const courses: Course[] = [
     curriculum: [
       {
         number: 1,
-        title: "Priprema — slanje radova, analiza i konsultativni razgovor",
+        title: "Priprema: slanje radova, analiza i konsultativni razgovor",
       },
       {
         number: 2,
         title:
-          "Dan usavršavanja — sadržaj prilagođen tvojoj tehnici, nivou znanja i prepoznatim izazovima",
+          "Dan usavršavanja: sadržaj prilagođen tvojoj tehnici, nivou znanja i prepoznatim izazovima",
       },
     ],
     forWhom: [
@@ -217,9 +217,9 @@ export const courses: Course[] = [
     slug: "aurabrows-online-bazna-obuka",
     name: "AuraBrows online bazna obuka",
     shortDescription:
-      "Kompletno znanje, video kursevi i materijal za rad — direktno na tvoju adresu. Uči iz svog doma, svojim tempom.",
+      "Kompletno znanje, video kursevi i materijal za rad, direktno na tvoju adresu. Uči iz svog doma, svojim tempom.",
     fullDescription:
-      "AuraBrows online bazna obuka kreirana je za tebe ako želiš da učiš iz svog doma, svojim tempom, i da se svakoj lekciji vraćaš onoliko puta koliko ti je potrebno.\n\nDobijaš kompletan edukativni program u video formatu, pristup svim online kursevima i materijal za praktičan rad koji ti šaljemo na kućnu adresu. Ovo nije nekoliko kratkih snimaka bez jasnog redosleda — dobijaš strukturiran sistem koji te vodi od pravilnog držanja alata i prvih vežbi na lateksu, preko oblikovanja i simetrije, do kompletnog prikaza rada na različitim tipovima kože.\n\nPristup svim online kursevima aktivira se od dana kada ti paket sa materijalom bude dostavljen — od tog trenutka imaš četiri meseca pristupa kompletnom programu.",
+      "AuraBrows online bazna obuka kreirana je za tebe ako želiš da učiš iz svog doma, svojim tempom, i da se svakoj lekciji vraćaš onoliko puta koliko ti je potrebno.\n\nDobijaš kompletan edukativni program u video formatu, pristup svim online kursevima i materijal za praktičan rad koji ti šaljemo na kućnu adresu. Ovo nije nekoliko kratkih snimaka bez jasnog redosleda, dobijaš strukturiran sistem koji te vodi od pravilnog držanja alata i prvih vežbi na lateksu, preko oblikovanja i simetrije, do kompletnog prikaza rada na različitim tipovima kože.\n\nPristup svim online kursevima aktivira se od dana kada ti paket sa materijalom bude dostavljen. Od tog trenutka imaš četiri meseca pristupa kompletnom programu.",
     type: "online",
     level: "pocetni",
     price: 105300,
@@ -229,9 +229,9 @@ export const courses: Course[] = [
     hasRatePayment: false,
     includes: [
       "Kompletan AuraBrows edukativni program u video formatu",
-      "Materijal za praktičan rad — dostava na kućnu adresu",
+      "Materijal za praktičan rad, dostava na kućnu adresu",
       "Pristup kursu Savršena simetrija obrva",
-      "Pristup kursevima Rad na modelu — normalna i masna koža",
+      "Pristup kursevima Rad na modelu: normalna i masna koža",
       "Pristup kursu Rad na modelu + ručno senčenje",
       "Pristup kursu Lateks vežbe i pravilno držanje alata",
       "Pristup kursu Različiti položaji i rasporedi dlačica",
@@ -260,9 +260,9 @@ export const courses: Course[] = [
     slug: "savrsena-simetrija-obrva",
     name: "Savršena simetrija obrva",
     shortDescription:
-      "Jasan sistem mapiranja koji možeš da ponoviš na svakom klijentu — bez dugog iscrtavanja i sumnje da li je oblik pravilno postavljen.",
+      "Jasan sistem mapiranja koji možeš da ponoviš na svakom klijentu, bez dugog iscrtavanja i sumnje da li je oblik pravilno postavljen.",
     fullDescription:
-      "Nauči da oblik obrva ne određuješ napamet, već prema licu koje je ispred tebe.\n\nSavršena simetrija ne znači da obe obrve moraju biti potpuno identične. Ona znači da znaš kako da prepoznaš proporcije, uspostaviš balans i kreiraš oblik koji izgleda skladno na konkretnom licu.\n\nOnline kurs Savršena simetrija obrva daje ti jasan sistem mapiranja koji možeš da ponoviš na svakom klijentu — bez dugog iscrtavanja, stalnog brisanja i sumnje da li je oblik pravilno postavljen. Kurs je koristan i početnicima koji žele da od početka postave dobre temelje, ali i iskusnim artistima koji žele da isprave greške u mapiranju.",
+      "Nauči da oblik obrva ne određuješ napamet, već prema licu koje je ispred tebe.\n\nSavršena simetrija ne znači da obe obrve moraju biti potpuno identične. Ona znači da znaš kako da prepoznaš proporcije, uspostaviš balans i kreiraš oblik koji izgleda skladno na konkretnom licu.\n\nOnline kurs Savršena simetrija obrva daje ti jasan sistem mapiranja koji možeš da ponoviš na svakom klijentu, bez dugog iscrtavanja, stalnog brisanja i sumnje da li je oblik pravilno postavljen. Kurs je koristan i početnicima koji žele da od početka postave dobre temelje, ali i iskusnim artistima koji žele da isprave greške u mapiranju.",
     type: "online",
     level: "svi",
     price: 99,
@@ -273,7 +273,7 @@ export const courses: Course[] = [
     includes: [
       "Razumevanje proporcija lica",
       "Jasan sistem mapiranja, korak po korak",
-      "Pravilno određivanje ključnih tačaka — početak, luk, završetak obrve",
+      "Pravilno određivanje ključnih tačaka: početak, luk, završetak obrve",
       "Prepoznavanje balansa i asimetrije",
       "Sigurniji i brži rad bez stalnog crtanja i brisanja",
       "Trajni pristup kursu",
@@ -291,11 +291,11 @@ export const courses: Course[] = [
   {
     id: "rad-na-modelu-normalna-koza",
     slug: "rad-na-modelu-normalna-koza",
-    name: "Rad na modelu — normalna koža",
+    name: "Rad na modelu: normalna koža",
     shortDescription:
-      "Kompletan profesionalni tretman na modelu sa normalnom kožom, od prve procene do završnog rezultata — bez preskočenih koraka.",
+      "Kompletan profesionalni tretman na modelu sa normalnom kožom, od prve procene do završnog rezultata, bez preskočenih koraka.",
     fullDescription:
-      "Pogledaj kako izgleda kompletan profesionalni tretman, od prve procene do završnog rezultata.\n\nKada poznaješ teoriju, ali ti i dalje nedostaje sigurnost da sve korake pravilno povežeš u celinu, detaljan prikaz rada na stvarnom modelu može napraviti veliku razliku. U ovoj video-lekciji pratiš kompletan tretman na modelu sa normalnom kožom, bez preskakanja koraka i bez ubrzanih delova koji ostavljaju nejasnoće.\n\nNe posmatraš samo tehniku — učiš kako da razmišljaš tokom tretmana, donosiš sigurnije odluke i organizuješ svoj rad tako da svaki korak ima jasno mesto i svrhu.",
+      "Pogledaj kako izgleda kompletan profesionalni tretman, od prve procene do završnog rezultata.\n\nKada poznaješ teoriju, ali ti i dalje nedostaje sigurnost da sve korake pravilno povežeš u celinu, detaljan prikaz rada na stvarnom modelu može napraviti veliku razliku. U ovoj video-lekciji pratiš kompletan tretman na modelu sa normalnom kožom, bez preskakanja koraka i bez ubrzanih delova koji ostavljaju nejasnoće.\n\nNe posmatraš samo tehniku. Učiš kako da razmišljaš tokom tretmana, donosiš sigurnije odluke i organizuješ svoj rad tako da svaki korak ima jasno mesto i svrhu.",
     type: "online",
     level: "pocetni",
     price: 150,
@@ -323,11 +323,11 @@ export const courses: Course[] = [
   {
     id: "rad-na-modelu-masna-koza",
     slug: "rad-na-modelu-masna-koza",
-    name: "Rad na modelu — masna koža",
+    name: "Rad na modelu: masna koža",
     shortDescription:
       "Kompletan tretman na koži koja zahteva precizniju procenu i prilagođen način rada, od procene do završnog prikaza rezultata.",
     fullDescription:
-      "Pogledaj kako izgleda kompletan tretman na koži koja zahteva precizniju procenu i prilagođen način rada.\n\nRad na masnoj koži često donosi dodatnu nesigurnost — kako pravilno proceniti kožu, koliko pritiska koristiti, kako kontrolisati dubinu i na koji način prilagoditi tehniku da bi rezultat bio uredan i profesionalan. U ovoj video-lekciji pratiš kompletan tretman na modelu sa masnom kožom, od prve procene prirodnih obrva do završnog prikaza rezultata.\n\nUčiš kako da posmatraš kožu, donosiš sigurnije odluke tokom tretmana i prilagodiš svaki korak modelu koji se nalazi ispred tebe.",
+      "Pogledaj kako izgleda kompletan tretman na koži koja zahteva precizniju procenu i prilagođen način rada.\n\nRad na masnoj koži često donosi dodatnu nesigurnost: kako pravilno proceniti kožu, koliko pritiska koristiti, kako kontrolisati dubinu i na koji način prilagoditi tehniku da bi rezultat bio uredan i profesionalan. U ovoj video-lekciji pratiš kompletan tretman na modelu sa masnom kožom, od prve procene prirodnih obrva do završnog prikaza rezultata.\n\nUčiš kako da posmatraš kožu, donosiš sigurnije odluke tokom tretmana i prilagodiš svaki korak modelu koji se nalazi ispred tebe.",
     type: "online",
     level: "srednji",
     price: 150,
@@ -355,9 +355,9 @@ export const courses: Course[] = [
     slug: "rad-na-modelu-rucno-sencenje",
     name: "Rad na modelu + ručno senčenje",
     shortDescription:
-      "Kako se dlačice i ručno senčenje povezuju u skladan, prirodan i profesionalan rezultat — bez oštrih ili prenaglašenih prelaza.",
+      "Kako se dlačice i ručno senčenje povezuju u skladan, prirodan i profesionalan rezultat, bez oštrih ili prenaglašenih prelaza.",
     fullDescription:
-      "Pogledaj kako se dlačice i ručno senčenje povezuju u skladan, prirodan i profesionalan rezultat.\n\nNekada same iscrtane dlačice nisu dovoljne da obrve dobiju potrebnu punoću, definiciju i vizuelnu ravnotežu. U ovoj video-lekciji pratiš kompletan tretman na modelu uz kombinovanje tehnike dlačica i ručnog senčenja — kako da pravilno povežeš dve tehnike, a da rezultat ne izgleda teško, prenaglašeno ili neprirodno.\n\nCilj nije da svaki tretman izgleda isto, već da naučiš kako da tehniku prilagodiš prirodnim obrvama, koži i željenom rezultatu.",
+      "Pogledaj kako se dlačice i ručno senčenje povezuju u skladan, prirodan i profesionalan rezultat.\n\nNekada same iscrtane dlačice nisu dovoljne da obrve dobiju potrebnu punoću, definiciju i vizuelnu ravnotežu. U ovoj video-lekciji pratiš kompletan tretman na modelu uz kombinovanje tehnike dlačica i ručnog senčenja, kako da pravilno povežeš dve tehnike, a da rezultat ne izgleda teško, prenaglašeno ili neprirodno.\n\nCilj nije da svaki tretman izgleda isto, već da naučiš kako da tehniku prilagodiš prirodnim obrvama, koži i željenom rezultatu.",
     type: "online",
     level: "srednji",
     price: 150,
@@ -386,7 +386,7 @@ export const courses: Course[] = [
     slug: "lateks-vezbe-i-pravilno-drzanje-alata",
     name: "Lateks vežbe i pravilno držanje alata",
     shortDescription:
-      "Izgradi sigurnu ruku pre rada na pravoj koži — pravilno držanje alata, položaj tela i kontrola pritiska kroz sistematične vežbe.",
+      "Izgradi sigurnu ruku pre rada na pravoj koži, kroz pravilno držanje alata, položaj tela i kontrolu pritiska.",
     fullDescription:
       "Izgradi sigurnu ruku pre rada na pravoj koži.\n\nOvaj online kurs namenjen je svima koji žele da nauče osnove tehnike kroz pravilno i sistematično vežbanje na lateksu. Kurs se sastoji iz nekoliko modula i video-lekcija koje možeš pratiti svojim tempom.\n\nCilj nije samo da ponavljaš pokrete, već da razumeš kako se pravilno izvode i naučiš da samostalno prepoznaš gde grešiš.",
     type: "online",
@@ -415,11 +415,11 @@ export const courses: Course[] = [
   {
     id: "lateks-vezbe-5-sablona",
     slug: "lateks-vezbe-5-sablona-dlacica",
-    name: "Lateks vežbe — 5 šablona dlačica",
+    name: "Lateks vežbe: 5 šablona dlačica",
     shortDescription:
       "Nauči kako se gradi pravilan raspored dlačica kroz pet šablona: Spine 3, Spine 5, Spine 6, Spine 5–6 i Upper Spine.",
     fullDescription:
-      "Nauči kako se gradi pravilan raspored dlačica, korak po korak.\n\nDobar raspored dlačica nije rezultat nasumičnog iscrtavanja — svaki šablon ima svoju logiku, pravac i način povezivanja poteza. U ovom online kursu naučićeš kako se grade različite šeme na lateksu: Spine 3, Spine 5, Spine 6, Spine 5–6 i Upper Spine.\n\nNećeš samo precrtavati gotov šablon — naučićeš da razumeš njegovu konstrukciju i logiku iza svakog poteza.",
+      "Nauči kako se gradi pravilan raspored dlačica, korak po korak.\n\nDobar raspored dlačica nije rezultat nasumičnog iscrtavanja. Svaki šablon ima svoju logiku, pravac i način povezivanja poteza. U ovom online kursu naučićeš kako se grade različite šeme na lateksu: Spine 3, Spine 5, Spine 6, Spine 5–6 i Upper Spine.\n\nNećeš samo precrtavati gotov šablon. Naučićeš da razumeš njegovu konstrukciju i logiku iza svakog poteza.",
     type: "online",
     level: "srednji",
     price: 200,
@@ -449,7 +449,7 @@ export const bonusCourse: Course = {
   slug: "bonus-profesionalno-sredjivanje-fotografija",
   name: "Bonus: Profesionalno sređivanje fotografija",
   shortDescription:
-    "Lep rezultat zaslužuje da bude lepo predstavljen — aplikacije, svetlo, kadar i obrada bez menjanja stvarnog rezultata.",
+    "Lep rezultat zaslužuje da bude lepo predstavljen: aplikacije, svetlo, kadar i obrada bez menjanja stvarnog rezultata.",
   fullDescription:
     "Lep rezultat zaslužuje da bude lepo predstavljen.\n\nMožeš uraditi savršene obrve, ali ukoliko fotografija nema dobro svetlo, kadar i završnu obradu, kvalitet tvog rada neće doći do izražaja. U ovom praktičnom video-kursu pokazujem kroz koje aplikacije se sređuju fotografije i kako da izgledaju čisto, profesionalno i privlačno za društvene mreže.\n\nCilj nije da se rad menja filterima, već da se njegov kvalitet pravilno prikaže.",
   type: "online",

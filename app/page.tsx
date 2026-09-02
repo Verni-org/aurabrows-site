@@ -13,9 +13,17 @@ const previewSlugs = [
   "aurabrows-online-bazna-obuka",
   "savrsena-simetrija-obrva",
 ];
+const levelOrder = {
+  pocetni: 0,
+  svi: 1,
+  srednji: 2,
+  napredni: 3,
+} as const;
+
 const previewCourses = previewSlugs
   .map((slug) => courses.find((c) => c.slug === slug))
-  .filter((c): c is (typeof courses)[number] => Boolean(c));
+  .filter((c): c is (typeof courses)[number] => Boolean(c))
+  .sort((a, b) => levelOrder[a.level] - levelOrder[b.level]);
 
 const stats = [
   { value: "1200+", label: "zadovoljnih polaznica" },
@@ -58,8 +66,9 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-semibold leading-[1.1] mb-6">
               Savršene obrve počinju <span className="accent">znanjem</span>
             </h1>
+            <div className="w-20 h-px bg-accent-gold/60 mb-6" />
             <p className="text-lg text-text-secondary max-w-md mb-10">
-              Naučite zanat puder obrva i oblikovanja od nule — kroz premium
+              Naučite zanat puder obrva i oblikovanja od nule, kroz premium
               video kurseve koje gledate svojim tempom, sa doživotnim
               pristupom i sertifikatom.
             </p>
@@ -81,29 +90,26 @@ export default function Home() {
             ratio="4 / 5"
           />
         </div>
-        <div className="hidden md:flex justify-center pb-10">
-          <span className="label !text-[10px]">Skroluj</span>
-        </div>
       </section>
 
       {/* 2. STATS BAR */}
       <section className="border-y border-border">
-        <div className="container-aura grid grid-cols-2 md:grid-cols-4">
-          {stats.map((s, i) => (
-            <div
-              key={s.label}
-              className={`py-10 text-center ${
-                i > 0 ? "border-l border-border" : ""
-              }`}
-            >
-              <p className="text-3xl md:text-4xl font-semibold text-accent-gold mb-1">
-                {s.value}
-              </p>
-              <p className="text-xs uppercase tracking-wider text-text-secondary">
-                {s.label}
-              </p>
-            </div>
-          ))}
+        <div className="container-aura py-6">
+          <div className="mx-auto max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-4">
+            {stats.map((s) => (
+              <div
+                key={s.label}
+                className="card-border bg-bg-card/50 px-6 py-8 text-center"
+              >
+                <p className="text-3xl md:text-4xl font-semibold text-accent-gold mb-1">
+                  {s.value}
+                </p>
+                <p className="text-xs uppercase tracking-wider text-text-secondary">
+                  {s.label}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -123,10 +129,11 @@ export default function Home() {
               Verujem da svaka žena zaslužuje da se{" "}
               <span className="accent">oseća sigurno u svoje umeće.</span>
             </h2>
+            <div className="w-20 h-px bg-accent-gold/60 mb-6" />
             <p className="text-text-secondary mb-8">
               Pre devet godina uzela sam prvu olovku za mapiranje i zaljubila
               se u preciznost zanata. Danas je Aura Brows prepoznatljivo ime u
-              oblikovanju i puder tehnici — a moja najveća radost je da to
+              oblikovanju i puder tehnici, a moja najveća radost je da to
               znanje prenesem dalje.
             </p>
             <div className="flex gap-10 mb-8 pb-8 border-b border-border">
@@ -145,17 +152,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="w-11 h-11 rounded-full bg-accent-gold/15 border border-accent-gold/40 text-accent-gold flex items-center justify-center font-semibold">
-                S
-              </span>
-              <div>
-                <p className="font-semibold">Saška</p>
-                <p className="text-xs uppercase tracking-wider text-text-secondary">
-                  Brow artist &amp; edukator
-                </p>
-              </div>
-            </div>
+            <p className="font-semibold text-lg">Saška</p>
           </div>
         </div>
       </section>
@@ -168,6 +165,7 @@ export default function Home() {
             <h2 className="text-4xl font-semibold mb-5">
               Izaberi svoj <span className="accent">put</span>
             </h2>
+            <div className="w-20 h-px bg-accent-gold/60 mx-auto mb-5" />
             <p className="text-text-secondary">
               Doživotni pristup, sertifikat i privatna zajednica uz svaki
               kurs.

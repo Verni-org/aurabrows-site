@@ -10,7 +10,7 @@ export const treatments: Treatment[] = [
   {
     id: "aurabrows-hiperrealisticne-obrve",
     slug: "aurabrows-hiperrealisticne-obrve",
-    name: "AuraBrows — autorska tehnika hiperrealističnih obrva",
+    name: "AuraBrows autorska tehnika hiperrealističnih obrva",
     description:
       "AuraBrows je moja autorska tehnika kreirana nakon godina iskustva, rada sa klijentima i usavršavanja u oblasti oblikovanja i trajne šminke obrva.\n\nPoznata sam po izradi hiperrealističnih dlačica koje prate prirodan smer rasta obrva i stapaju se sa postojećim dlačicama, tako da je teško prepoznati gde se prirodna obrva završava, a pigmentacija počinje.\n\nU okviru AuraBrows tretmana ne koristim jednu unapred određenu šemu. Oblik, raspored dlačica i intenzitet prilagođavam anatomiji lica, mimici, prirodnim obrvama i rezultatu koji želiš. U zavisnosti od potreba tvojih obrva, kombinujem ručno iscrtavanje hiperrealističnih dlačica, nežno ručno ili mašinsko senčenje i kombinovanje dlačica i senke radi dodatne punoće.",
     goodFor: [

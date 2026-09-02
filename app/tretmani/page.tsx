@@ -49,14 +49,19 @@ export default function TretmaniPage() {
               }`}
             >
               <div className={i % 2 === 1 ? "[direction:ltr]" : ""}>
-                <PhotoPlaceholder
-                  src={image?.src}
-                  alt={image?.alt ?? t.name}
-                  objectPosition={image?.objectPosition}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  label={`Foto — ${t.name}`}
-                  ratio="4 / 3"
-                />
+                <div className="relative">
+                  <PhotoPlaceholder
+                    src={image?.src}
+                    alt={image?.alt ?? t.name}
+                    objectPosition={image?.objectPosition}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    label={`Foto: ${t.name}`}
+                    ratio="4 / 3"
+                  />
+                  <div className="absolute left-5 bottom-5 bg-bg-primary/88 border border-border px-4 py-2 text-xs uppercase tracking-[0.22em] text-text-primary">
+                    {t.name}
+                  </div>
+                </div>
               </div>
               <div className={i % 2 === 1 ? "[direction:ltr]" : ""}>
                 <h2 className="text-3xl font-semibold mb-5">{t.name}</h2>
@@ -65,13 +70,13 @@ export default function TretmaniPage() {
                     <p key={pi}>{p}</p>
                   ))}
                 </div>
-                <p className="label !text-[11px] mb-3">
+                <p className="text-sm uppercase tracking-[0.22em] text-text-secondary font-medium mb-4">
                   Pravi izbor za tebe ako:
                 </p>
-                <ul className="flex flex-col gap-2 mb-6">
+                <ul className="flex flex-col gap-3 mb-6">
                   {t.goodFor.map((g) => (
-                    <li key={g} className="flex items-start gap-3 text-sm">
-                      <span className="text-accent-gold mt-1">—</span>
+                    <li key={g} className="flex items-start gap-3 text-sm leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-gold shrink-0 mt-[0.72rem]" />
                       <span className="text-text-secondary">{g}</span>
                     </li>
                   ))}
