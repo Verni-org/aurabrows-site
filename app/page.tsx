@@ -28,7 +28,7 @@ const previewCourses = previewSlugs
 const stats = [
   { value: "1200+", label: "zadovoljnih polaznica" },
   { value: "9", label: "godina iskustva" },
-  { value: "4.9 ★", label: "prosečna ocena" },
+  { value: "4.9", label: "prosečna ocena" },
   { value: "30+", label: "zemalja polaznica" },
 ];
 
@@ -60,7 +60,7 @@ export default function Home() {
     <>
       {/* 1. HERO */}
       <section className="relative overflow-hidden">
-        <div className="container-aura pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
+        <div className="container-aura pt-8 pb-20 md:pt-12 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="label mb-6">Online akademija obrva</p>
             <h1 className="text-5xl md:text-6xl font-semibold leading-[1.1] mb-6">

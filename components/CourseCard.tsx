@@ -1,11 +1,12 @@
 import Link from "next/link";
 import PhotoPlaceholder from "./PhotoPlaceholder";
-import { Course, formatPrice, levelLabels } from "@/data/courses";
+import { Course, formatPriceParts, levelLabels } from "@/data/courses";
 import { courseImages } from "@/lib/images";
 
 export default function CourseCard({ course }: { course: Course }) {
   const isLive = course.type !== "online";
   const image = courseImages[course.id];
+  const price = formatPriceParts(course.price, course.currency);
 
   return (
     <Link
@@ -34,18 +35,23 @@ export default function CourseCard({ course }: { course: Course }) {
           </div>
         )}
 
-        <div className="flex items-end justify-between gap-4 pt-4 border-t border-border mt-2">
+        <div className="flex flex-col items-start gap-3 pt-4 border-t border-border mt-2">
           <div className="min-h-[3.5rem] flex flex-col justify-end">
             {isLive && (
               <span className="block text-[11px] text-text-secondary uppercase tracking-wider mb-0.5">
                 Grupna cena
               </span>
             )}
-            <span className="text-2xl font-bold text-accent-gold">
-              {formatPrice(course.price, course.currency)}
+            <span className="inline-flex items-baseline gap-1.5 whitespace-nowrap text-accent-gold">
+              <span className="text-2xl font-bold leading-none tabular-nums">
+                {price.amount}
+              </span>
+              <span className="text-sm font-semibold uppercase tracking-[0.12em] leading-none">
+                {price.unit}
+              </span>
             </span>
           </div>
-          <span className="label !text-[11px] group-hover:text-accent-gold transition-colors">
+          <span className="label !text-[11px] whitespace-nowrap group-hover:text-accent-gold transition-colors">
             Detaljnije →
           </span>
         </div>

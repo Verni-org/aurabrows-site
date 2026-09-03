@@ -3,6 +3,7 @@ import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ScrollToTopOnRouteChange from "@/components/ScrollToTopOnRouteChange";
 import {
   getOrganizationSchema,
   getWebsiteSchema,
@@ -47,6 +48,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">
+        <ScrollToTopOnRouteChange />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

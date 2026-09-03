@@ -43,7 +43,7 @@ export default function ContactForm() {
         placeholder="Ime i prezime"
         value={form.name}
         onChange={(e) => setForm({ ...form, name: e.target.value })}
-        className="bg-transparent border border-border rounded px-4 py-3 text-sm focus:outline-none focus:border-accent-gold"
+        className="w-full min-h-14 bg-transparent border border-border rounded px-5 py-4 text-base leading-tight focus:outline-none focus:border-accent-gold"
       />
       <input
         required
@@ -51,15 +51,15 @@ export default function ContactForm() {
         placeholder="Email"
         value={form.email}
         onChange={(e) => setForm({ ...form, email: e.target.value })}
-        className="bg-transparent border border-border rounded px-4 py-3 text-sm focus:outline-none focus:border-accent-gold"
+        className="w-full min-h-14 bg-transparent border border-border rounded px-5 py-4 text-base leading-tight focus:outline-none focus:border-accent-gold"
       />
       <textarea
         required
-        rows={5}
+        rows={6}
         placeholder="Poruka"
         value={form.message}
         onChange={(e) => setForm({ ...form, message: e.target.value })}
-        className="bg-transparent border border-border rounded px-4 py-3 text-sm focus:outline-none focus:border-accent-gold resize-none"
+        className="w-full min-h-40 bg-transparent border border-border rounded px-5 py-4 text-base leading-relaxed focus:outline-none focus:border-accent-gold resize-none"
       />
       <button
         type="submit"

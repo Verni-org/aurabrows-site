@@ -477,3 +477,13 @@ export function formatPrice(price: number, currency: Currency): string {
   const formatted = new Intl.NumberFormat("sr-RS").format(price);
   return currency === "EUR" ? `${formatted} €` : `${formatted} RSD`;
 }
+
+export function formatPriceParts(
+  price: number,
+  currency: Currency
+): { amount: string; unit: string } {
+  return {
+    amount: new Intl.NumberFormat("sr-RS").format(price),
+    unit: currency === "EUR" ? "€" : "RSD",
+  };
+}
