@@ -95,7 +95,7 @@ export default function CourseSidebar({ course }: { course: Course }) {
               Tvoj edukator
             </p>
             <p className="font-semibold">Saška</p>
-            <p className="text-xs text-text-secondary">9+ godina iskustva</p>
+            <p className="text-xs text-text-secondary">15 godina iskustva</p>
           </div>
         </div>
       </div>

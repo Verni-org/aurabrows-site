@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/kursevi",
     "/tretmani",
+    "/galerija",
     "/o-meni",
     "/utisci",
     "/faq",

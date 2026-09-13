@@ -26,10 +26,10 @@ const previewCourses = previewSlugs
   .sort((a, b) => levelOrder[a.level] - levelOrder[b.level]);
 
 const stats = [
-  { value: "1200+", label: "zadovoljnih polaznica" },
-  { value: "9", label: "godina iskustva" },
-  { value: "4.9", label: "prosečna ocena" },
-  { value: "30+", label: "zemalja polaznica" },
+  { value: "2000+", label: "zadovoljnih polaznica" },
+  { value: "15", label: "godina iskustva" },
+  { value: "50+", label: "edukovanih polaznica" },
+  { value: "", label: "Nagrađivani studenti, rezultati koji govore dalje" },
 ];
 
 const benefits = [
@@ -63,14 +63,16 @@ export default function Home() {
         <div className="container-aura pt-8 pb-20 md:pt-12 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="label mb-6">Online akademija obrva</p>
-            <h1 className="text-5xl md:text-6xl font-semibold leading-[1.1] mb-6">
-              Savršene obrve počinju <span className="accent">znanjem</span>
+            <h1 className="text-3xl md:text-3xl font-semibold leading-[1.1] mb-6">
+              PRIRODNOST, PRECIZNOST I ŽENSTVENOST — <span className="accent">TRI VREDNOSTI KOJE DEFINIŠU
+              SVAKI MOJ RAD</span>
             </h1>
             <div className="w-20 h-px bg-accent-gold/60 mb-6" />
             <p className="text-lg text-text-secondary max-w-md mb-10">
-              Naučite zanat puder obrva i oblikovanja od nule, kroz premium
-              video kurseve koje gledate svojim tempom, sa doživotnim
-              pristupom i sertifikatom.
+              AuraBrows je nastao iz želje da obrve ne menjaju lice, već da istaknu
+              njegovu prirodnu harmoniju. Dugogodišnje iskustvo, umetnost oblikovanja
+              i individualan pristup danas prenosim kroz rad sa klijentkinjama i
+              edukacije, sa istom pažnjom prema svakom detalju.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/kursevi" className="btn-primary">
@@ -131,14 +133,14 @@ export default function Home() {
             </h2>
             <div className="w-20 h-px bg-accent-gold/60 mb-6" />
             <p className="text-text-secondary mb-8">
-              Pre devet godina uzela sam prvu olovku za mapiranje i zaljubila
+              Pre petnaest godina uzela sam prvu olovku za mapiranje i zaljubila
               se u preciznost zanata. Danas je Aura Brows prepoznatljivo ime u
               oblikovanju i puder tehnici, a moja najveća radost je da to
               znanje prenesem dalje.
             </p>
             <div className="flex gap-10 mb-8 pb-8 border-b border-border">
               <div>
-                <p className="text-2xl font-semibold text-accent-gold">9+</p>
+                <p className="text-2xl font-semibold text-accent-gold">15</p>
                 <p className="text-xs uppercase tracking-wider text-text-secondary">
                   godina iskustva
                 </p>
