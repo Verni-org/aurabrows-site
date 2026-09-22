@@ -141,3 +141,50 @@ body {
   border: 1px solid var(--border);
   border-radius: 10px;
 }
+
+.testimonial-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.testimonial-track::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 640px) {
+  .testimonial-slide {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-slide {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+.testimonial-dialog {
+  width: min(94vw, 960px);
+  max-height: 94dvh;
+  margin: auto;
+  padding: 20px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.testimonial-dialog::backdrop {
+  background: rgb(0 0 0 / 85%);
+}

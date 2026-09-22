@@ -54,6 +54,7 @@ export default function TretmaniPage() {
                     src={image?.src}
                     alt={image?.alt ?? t.name}
                     objectPosition={image?.objectPosition}
+                    objectFit={image?.objectFit}
                     sizes="(max-width: 768px) 100vw, 50vw"
                     label={`Foto: ${t.name}`}
                     ratio="4 / 3"

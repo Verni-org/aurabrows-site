@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Aleksandra Stojilković — Saška. Osnivač Studija lepote Saška, edukator za obrve i kreator autorske tehnike AuraBrows.",
     path: "/o-meni",
-    image: "https://aurabrowsbysaska.rs/images/site/saska-portret.jpeg",
+    image: new URL(siteImages.portrait.src, "https://aurabrowsbysaska.rs").toString(),
   }),
 };
 

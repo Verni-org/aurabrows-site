@@ -1,10 +1,9 @@
 import Link from "next/link";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import CourseCard from "@/components/CourseCard";
-import TestimonialCard from "@/components/TestimonialCard";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { IconInfinity, IconCertificate, IconCommunity, IconSteps } from "@/components/icons";
 import { courses } from "@/data/courses";
-import { testimonials } from "@/data/testimonials";
 import { siteImages } from "@/lib/images";
 
 const previewSlugs = [
@@ -119,9 +118,9 @@ export default function Home() {
       <section className="section-pad">
         <div className="container-aura grid md:grid-cols-2 gap-14 items-center">
           <PhotoPlaceholder
-            src={siteImages.portrait.src}
-            alt={siteImages.portrait.alt}
-            objectPosition={siteImages.portrait.objectPosition}
+            src={siteImages.homePortrait.src}
+            alt={siteImages.homePortrait.alt}
+            objectPosition={siteImages.homePortrait.objectPosition}
             sizes="(max-width: 768px) 100vw, 40vw"
             ratio="4 / 5"
           />
@@ -205,16 +204,12 @@ export default function Home() {
       <section className="section-pad bg-bg-card">
         <div className="container-aura">
           <div className="text-center max-w-xl mx-auto mb-14">
-            <p className="label mb-6">Utisci polaznica</p>
+            <p className="label mb-6">Utisci polaznica i klijentkinja</p>
             <h2 className="text-4xl font-semibold">
               Reči koje <span className="accent">greju</span>
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <TestimonialCard key={t.name} t={t} />
-            ))}
-          </div>
+          <TestimonialCarousel />
         </div>
       </section>
 

@@ -1,3 +1,5 @@
+import { siteImages } from "@/lib/images";
+
 type PageMetadataInput = {
   title: string;
   description: string;
@@ -6,7 +8,7 @@ type PageMetadataInput = {
 };
 
 const siteUrl = "https://aurabrowsbysaska.rs";
-const defaultImage = `${siteUrl}/images/site/hero-edukacija.jpeg`;
+const defaultImage = new URL(siteImages.hero.src, siteUrl).toString();
 
 export function buildPageMetadata({
   title,

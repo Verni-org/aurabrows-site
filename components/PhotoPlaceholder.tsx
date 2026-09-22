@@ -8,6 +8,7 @@ type PhotoPlaceholderProps = {
   sizes?: string;
   priority?: boolean;
   objectPosition?: string;
+  objectFit?: "cover" | "contain";
   ratio?: string;
 };
 
@@ -19,6 +20,7 @@ export default function PhotoPlaceholder({
   sizes = "100vw",
   priority = false,
   objectPosition = "center",
+  objectFit = "cover",
   ratio = "4 / 5",
 }: PhotoPlaceholderProps) {
   return (
@@ -33,8 +35,7 @@ export default function PhotoPlaceholder({
           fill
           priority={priority}
           sizes={sizes}
-          className="object-cover"
-          style={{ objectPosition }}
+          style={{ objectPosition, objectFit }}
         />
       ) : (
         <span>{label}</span>

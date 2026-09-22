@@ -94,7 +94,7 @@ Layout sekcija (tačan redosled iz mockupa):
 - Label: `DOBRODOŠLI U AURA BROWS`
 - Naslov: "Verujem da svaka žena zaslužuje da se oseća **sigurno u svoje umeće.**" (italic + gold)
 - Tekst: kratak intro o Saški
-- Mini stats: `9+ godina iskustva` · `1200+ polaznica`
+- Mini stats: `15 godina iskustva` · `1200+ polaznica`
 - Avatar + ime: "Saška — Brow artist & edukator"
 - Levo: placeholder za sliku
 

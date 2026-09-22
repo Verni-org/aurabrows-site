@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CourseCard from "@/components/CourseCard";
 import { courses } from "@/data/courses";
+import { courseImages } from "@/lib/images";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Edukacije uživo i online video kursevi za oblikovanje i puder tehniku obrva. Doživotni pristup, sertifikat i mentorstvo.",
     path: "/kursevi",
-    image: "https://aurabrowsbysaska.rs/images/site/aurabrows-bazna-obuka.jpeg",
+    image: `https://aurabrowsbysaska.rs${courseImages["aurabrows-bazna-obuka"].src}`,
   }),
 };
 

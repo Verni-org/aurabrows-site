@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import TestimonialCard from "@/components/TestimonialCard";
-import { testimonials } from "@/data/testimonials";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = {
-  title: "Utisci polaznica",
+  title: "Utisci polaznica i klijentkinja",
   description:
-    "Pročitaj šta polaznice kažu o AuraBrows edukacijama i online kursevima.",
+    "Pogledaj poruke polaznica i klijentkinja o AuraBrows edukacijama, online kursevima i tretmanima.",
   ...buildPageMetadata({
-    title: "Utisci polaznica | AuraBrows by Saška",
+    title: "Utisci polaznica i klijentkinja | AuraBrows by Saška",
     description:
-      "Pročitaj šta polaznice kažu o AuraBrows edukacijama i online kursevima.",
+      "Pogledaj poruke polaznica i klijentkinja o AuraBrows edukacijama, online kursevima i tretmanima.",
     path: "/utisci",
     image: "https://aurabrowsbysaska.rs/images/site/sertifikat-polaznica.jpeg",
   }),
@@ -22,16 +21,14 @@ export default function UtisciPage() {
     <div className="section-pad">
       <div className="container-aura">
         <div className="text-center max-w-xl mx-auto mb-16">
-          <p className="label mb-6">Utisci polaznica</p>
+          <p className="label mb-6">Utisci polaznica i klijentkinja</p>
           <h1 className="text-5xl font-semibold mb-6">
             Reči koje <span className="accent">greju</span>
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-          {testimonials.map((t) => (
-            <TestimonialCard key={t.name} t={t} />
-          ))}
+        <div className="mb-20">
+          <TestimonialCarousel />
         </div>
 
         <div className="text-center">
