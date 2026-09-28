@@ -62,7 +62,7 @@ export const courses: Course[] = [
       "Pristup kursu Savršena simetrija obrva",
       "Pristup kursevima Rad na modelu: normalna koža, masna koža i ručno senčenje",
       "Pristup kursu Lateks vežbe i pravilno držanje alata",
-      "Pristup kursu Različiti položaji i rasporedi dlačica (Spine 3, 5, 6, 5–6)",
+      "Pristup kursu Različiti položaji i rasporedi dlačica (Spine 3, 5, 6, 5-6)",
       "Bonus kurs fotografisanja i sređivanja radova",
       "Dva meseca premium mentorstva sa nedeljnim Zoom sastancima",
       "Detaljna analiza i korekcija svakog poslatog rada",
@@ -417,9 +417,9 @@ export const courses: Course[] = [
     slug: "lateks-vezbe-5-sablona-dlacica",
     name: "Lateks vežbe: 5 šablona dlačica",
     shortDescription:
-      "Nauči kako se gradi pravilan raspored dlačica kroz pet šablona: Spine 3, Spine 5, Spine 6, Spine 5–6 i Upper Spine.",
+      "Nauči kako se gradi pravilan raspored dlačica kroz pet šablona: Spine 3, Spine 5, Spine 6, Spine 5-6 i Upper Spine.",
     fullDescription:
-      "Nauči kako se gradi pravilan raspored dlačica, korak po korak.\n\nDobar raspored dlačica nije rezultat nasumičnog iscrtavanja. Svaki šablon ima svoju logiku, pravac i način povezivanja poteza. U ovom online kursu naučićeš kako se grade različite šeme na lateksu: Spine 3, Spine 5, Spine 6, Spine 5–6 i Upper Spine.\n\nNećeš samo precrtavati gotov šablon. Naučićeš da razumeš njegovu konstrukciju i logiku iza svakog poteza.",
+      "Nauči kako se gradi pravilan raspored dlačica, korak po korak.\n\nDobar raspored dlačica nije rezultat nasumičnog iscrtavanja. Svaki šablon ima svoju logiku, pravac i način povezivanja poteza. U ovom online kursu naučićeš kako se grade različite šeme na lateksu: Spine 3, Spine 5, Spine 6, Spine 5-6 i Upper Spine.\n\nNećeš samo precrtavati gotov šablon. Naučićeš da razumeš njegovu konstrukciju i logiku iza svakog poteza.",
     type: "online",
     level: "srednji",
     price: 200,

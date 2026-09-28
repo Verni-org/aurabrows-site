@@ -19,7 +19,7 @@ export default function CourseSidebar({ course }: { course: Course }) {
         alt={image?.alt ?? course.name}
         objectPosition={image?.objectPosition}
         sizes="(max-width: 1024px) 100vw, 380px"
-        label={`Foto — ${course.name}`}
+        label={`Foto - ${course.name}`}
         ratio="4 / 3"
       />
       <div className="p-6 flex flex-col gap-5">

@@ -34,7 +34,7 @@ export default function KontaktPage() {
             Javi nam se <span className="accent">direktno</span>
           </h1>
           <p className="text-text-secondary">
-            Za pitanja o kursevima, edukacijama, tretmanima ili saradnji —
+            Za pitanja o kursevima, edukacijama, tretmanima ili saradnji -
             javi nam se, odgovaramo u najkraćem roku.
           </p>
         </div>

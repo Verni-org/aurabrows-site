@@ -6,7 +6,7 @@ const STORE_DIR = path.join(process.cwd(), ".data");
 /**
  * Best-effort local JSON append, used as a lightweight record of
  * submissions in Faza 1 (no Supabase/Airtable wired up yet). Email is the
- * source of truth for follow-up — this silently no-ops on read-only
+ * source of truth for follow-up - this silently no-ops on read-only
  * filesystems (e.g. serverless production) instead of failing the request.
  */
 export async function appendRecord(file: string, record: unknown) {

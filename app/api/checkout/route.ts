@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     `Kurs: ${courseName}`,
     body.plan && `Vrsta: ${body.plan}`,
     body.payment && `Plaćanje: ${body.payment === "rate" ? "u 2 rate" : "jednokratno"}`,
-    body.addBonus && `Order bump: Bonus kurs — Profesionalno sređivanje fotografija (19 €)`,
+    body.addBonus && `Order bump: Bonus kurs - Profesionalno sređivanje fotografija (19 €)`,
     `Ime: ${name}`,
     `Email: ${email}`,
     `Telefon: ${phone}`,
@@ -48,7 +48,7 @@ export async function POST(request: Request) {
 
   await sendEmail({
     to: email,
-    subject: "Potvrda prijave — AuraBrows by Saška",
+    subject: "Potvrda prijave - AuraBrows by Saška",
     html: `<p>Zdravo ${name},</p><p>Hvala na prijavi za <strong>${courseName}</strong>. Tvoja narudžbina je zabeležena.</p><p>Saška će ti se uskoro javiti na ovaj email sa instrukcijama za uplatu i daljim koracima. Nakon evidentirane uplate dobijaš pristup kursu.</p><p>Vidimo se uskoro,<br/>AuraBrows by Saška</p>`,
   });
 

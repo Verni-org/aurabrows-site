@@ -108,7 +108,7 @@ export default async function CourseDetailPage({
               alt={courseImage?.alt ?? course.name}
               objectPosition={courseImage?.objectPosition}
               sizes="(max-width: 1024px) 100vw, 720px"
-              label="Video — uvodna reč"
+              label="Video - uvodna reč"
               ratio="16 / 9"
               className="mb-14"
             />
@@ -168,7 +168,7 @@ export default async function CourseDetailPage({
               <ul className="flex flex-col gap-3">
                 {course.forWhom.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="text-accent-gold mt-1">—</span>
+                    <span className="text-accent-gold mt-1">-</span>
                     <span className="text-text-secondary">{item}</span>
                   </li>
                 ))}

@@ -50,7 +50,7 @@ export default function NewsletterForm() {
       </button>
       {status === "error" && (
         <p className="text-xs text-red-400 absolute mt-14">
-          Greška — pokušaj ponovo.
+          Greška - pokušaj ponovo.
         </p>
       )}
     </form>

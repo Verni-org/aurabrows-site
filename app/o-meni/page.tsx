@@ -8,11 +8,11 @@ import { getPersonSchema } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "O meni",
   description:
-    "Aleksandra Stojilković — Saška. Osnivač Studija lepote Saška, edukator za obrve i kreator autorske tehnike AuraBrows.",
+    "Aleksandra Stojilković - Saška. Osnivač Studija lepote Saška, edukator za obrve i kreator autorske tehnike AuraBrows.",
   ...buildPageMetadata({
     title: "O meni | AuraBrows by Saška",
     description:
-      "Aleksandra Stojilković — Saška. Osnivač Studija lepote Saška, edukator za obrve i kreator autorske tehnike AuraBrows.",
+      "Aleksandra Stojilković - Saška. Osnivač Studija lepote Saška, edukator za obrve i kreator autorske tehnike AuraBrows.",
     path: "/o-meni",
     image: new URL(siteImages.portrait.src, "https://aurabrowsbysaska.rs").toString(),
   }),

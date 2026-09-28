@@ -8,11 +8,11 @@ import { buildPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Tretmani",
   description:
-    "AuraBrows autorska tehnika, puder obrve, hair stroke i trajna šminka usana — tretmani prilagođeni tvom licu.",
+    "AuraBrows autorska tehnika, puder obrve, hair stroke i trajna šminka usana - tretmani prilagođeni tvom licu.",
   ...buildPageMetadata({
     title: "Tretmani | AuraBrows by Saška",
     description:
-      "AuraBrows autorska tehnika, puder obrve, hair stroke i trajna šminka usana — tretmani prilagođeni tvom licu.",
+      "AuraBrows autorska tehnika, puder obrve, hair stroke i trajna šminka usana - tretmani prilagođeni tvom licu.",
     path: "/tretmani",
     image: "https://aurabrowsbysaska.rs/images/site/aurabrows-tretman.jpeg",
   }),

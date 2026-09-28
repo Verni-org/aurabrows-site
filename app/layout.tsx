@@ -20,13 +20,13 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL("https://aurabrowsbysaska.rs"),
   title: {
-    default: "AuraBrows by Saška — Online akademija obrva",
+    default: "AuraBrows by Saška - Online akademija obrva",
     template: "%s | AuraBrows by Saška",
   },
   description:
     "Naučite zanat puder obrva i oblikovanja od nule kroz premium video kurseve i edukacije uživo. Doživotni pristup, sertifikat i mentorstvo uz svaki program.",
   ...buildPageMetadata({
-    title: "AuraBrows by Saška — Online akademija obrva",
+    title: "AuraBrows by Saška - Online akademija obrva",
     description:
       "Naučite zanat puder obrva i oblikovanja od nule kroz premium video kurseve i edukacije uživo.",
   }),

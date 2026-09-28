@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
   await sendEmail({
     to: ownerNotifyEmail(),
-    subject: `Nova poruka sa sajta — ${name}`,
+    subject: `Nova poruka sa sajta - ${name}`,
     html: `<p><strong>Ime:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Poruka:</strong></p><p>${message.replace(/\n/g, "<br/>")}</p>`,
   });
 
