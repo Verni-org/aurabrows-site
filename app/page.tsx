@@ -63,7 +63,7 @@ export default function Home() {
           <div>
             <p className="label mb-6">Online akademija obrva</p>
             <h1 className="text-3xl md:text-3xl font-semibold leading-[1.1] mb-6">
-              PRIRODNOST, PRECIZNOST I ŽENSTVENOST — <span className="accent">TRI VREDNOSTI KOJE DEFINIŠU
+              PRIRODNOST, PRECIZNOST I ŽENSTVENOST - <span className="accent">TRI VREDNOSTI KOJE DEFINIŠU
               SVAKI MOJ RAD</span>
             </h1>
             <div className="w-20 h-px bg-accent-gold/60 mb-6" />
