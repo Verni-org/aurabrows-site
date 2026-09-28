@@ -111,6 +111,7 @@ export default function TestimonialCarousel() {
             className="testimonial-slide"
           >
             <TestimonialCard t={testimonial} onOpen={() => {
+              if (window.matchMedia("(max-width: 639px)").matches) return;
               setSelected(testimonial);
               dialogRef.current?.showModal();
             }} />

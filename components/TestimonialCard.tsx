@@ -14,7 +14,7 @@ export default function TestimonialCard({
       onClick={onOpen}
       aria-label={`Uvećaj poruku: ${t.alt}`}
       aria-haspopup="dialog"
-      className="group card-border flex w-full cursor-zoom-in flex-col overflow-hidden bg-bg-primary p-3 text-left transition-colors hover:border-accent-gold/60 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent-gold"
+      className="group card-border flex w-full cursor-zoom-in flex-col max-sm:pointer-events-none max-sm:cursor-default overflow-hidden bg-bg-primary p-3 text-left transition-colors hover:border-accent-gold/60 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent-gold"
     >
       <span className="relative block aspect-[4/5] w-full overflow-hidden rounded bg-black">
         <Image
@@ -25,7 +25,7 @@ export default function TestimonialCard({
           className="object-contain"
         />
       </span>
-      <span className="flex items-center justify-between gap-3 px-1 pt-3 pb-1 text-sm text-text-secondary group-hover:text-accent-gold">
+      <span className="flex items-center justify-between max-sm:hidden gap-3 px-1 pt-3 pb-1 text-sm text-text-secondary group-hover:text-accent-gold">
         <span>Uvećaj poruku</span>
         <span aria-hidden="true">↗</span>
       </span>
