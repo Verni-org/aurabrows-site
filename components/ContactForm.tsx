@@ -64,7 +64,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="btn-primary w-fit"
+        className="btn-primary w-full sm:w-fit"
       >
         {status === "loading" ? "Slanje..." : "Pošalji"}
       </button>

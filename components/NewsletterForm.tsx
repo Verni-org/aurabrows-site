@@ -32,24 +32,24 @@ export default function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2">
+    <form onSubmit={handleSubmit} className="relative flex flex-col sm:flex-row gap-2">
       <input
         type="email"
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Tvoj email"
-        className="flex-1 min-w-0 bg-transparent border border-border rounded px-4 py-3 text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-accent-gold"
+        className="flex-1 min-w-0 bg-transparent border border-border rounded px-4 py-3 text-base sm:text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-accent-gold"
       />
       <button
         type="submit"
         disabled={status === "loading"}
-        className="btn-primary !px-5 !py-3 shrink-0"
+        className="btn-primary w-full sm:w-auto !px-5 !py-3 shrink-0"
       >
         {status === "loading" ? "..." : "Pošalji"}
       </button>
       {status === "error" && (
-        <p className="text-xs text-red-400 absolute mt-14">
+        <p className="text-xs text-red-400 sm:absolute sm:top-full sm:mt-2">
           Greška - pokušaj ponovo.
         </p>
       )}
