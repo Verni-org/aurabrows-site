@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | AuraBrows by Saška",
   },
   description:
-    "Naučite zanat puder obrva i oblikovanja od nule kroz premium video kurseve i edukacije uživo. Doživotni pristup, sertifikat i mentorstvo uz svaki program.",
+    "Naučite zanat puder obrva i oblikovanja od nule kroz premium video kurseve i edukacije uživo. Pristup samostalnim online kursevima traje 60 dana.",
   ...buildPageMetadata({
     title: "AuraBrows by Saška - Online akademija obrva",
     description:

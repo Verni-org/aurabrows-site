@@ -22,7 +22,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Koliko dugo imam pristup online materijalu?",
     answer:
-      "Period pristupa zavisi od kursa ili edukacije koju odabereš. Pristup može trajati 30 dana, nekoliko meseci ili biti trajan, što je jasno naznačeno pre kupovine.",
+      "Samostalni online kursevi imaju 60 dana pristupa. Kod online bazne obuke period počinje od dana prijema paketa sa materijalom. Trajanje pristupa uz edukacije uživo navedeno je u opisu svake ponude.",
   },
   {
     question: "Da li dobijam materijal za rad?",

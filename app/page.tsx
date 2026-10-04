@@ -2,7 +2,7 @@ import Link from "next/link";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import CourseCard from "@/components/CourseCard";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
-import { IconInfinity, IconCertificate, IconCommunity, IconSteps } from "@/components/icons";
+import { IconClock, IconCertificate, IconCommunity, IconSteps } from "@/components/icons";
 import { courses } from "@/data/courses";
 import { siteImages } from "@/lib/images";
 
@@ -33,9 +33,9 @@ const stats = [
 
 const benefits = [
   {
-    icon: IconInfinity,
-    title: "Doživotni pristup",
-    text: "Gledaj kad god želiš, koliko god puta želiš.",
+    icon: IconClock,
+    title: "Online kursevi: 60 dana",
+    text: "Vraćaj se lekcijama tokom 60 dana pristupa.",
   },
   {
     icon: IconCertificate,
@@ -134,7 +134,7 @@ export default function Home() {
             <p className="text-text-secondary mb-8">
               Pre petnaest godina uzela sam prvu olovku za mapiranje i zaljubila
               se u preciznost zanata. Danas je Aura Brows prepoznatljivo ime u
-              oblikovanju i puder tehnici, a moja najveća radost je da to
+              tehnici hiperrealističnog iscrtavanja dlačica, a moja najveća radost je da to
               znanje prenesem dalje.
             </p>
             <div className="flex gap-10 mb-8 pb-8 border-b border-border">
@@ -168,8 +168,7 @@ export default function Home() {
             </h2>
             <div className="w-20 h-px bg-accent-gold/60 mx-auto mb-5" />
             <p className="text-text-secondary">
-              Doživotni pristup, sertifikat i privatna zajednica uz svaki
-              kurs.
+              Pristup samostalnim online kursevima traje 60 dana.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -176,7 +176,7 @@ export const courses: Course[] = [
     price: 600,
     currency: "EUR",
     accessDuration: "30 dana",
-    hasCertificate: false,
+    hasCertificate: true,
     hasRatePayment: false,
     includes: [
       "Unapred pripremljen plan prema tvojim potrebama",
@@ -219,12 +219,12 @@ export const courses: Course[] = [
     shortDescription:
       "Kompletno znanje, video kursevi i materijal za rad, direktno na tvoju adresu. Uči iz svog doma, svojim tempom.",
     fullDescription:
-      "AuraBrows online bazna obuka kreirana je za tebe ako želiš da učiš iz svog doma, svojim tempom, i da se svakoj lekciji vraćaš onoliko puta koliko ti je potrebno.\n\nDobijaš kompletan edukativni program u video formatu, pristup svim online kursevima i materijal za praktičan rad koji ti šaljemo na kućnu adresu. Ovo nije nekoliko kratkih snimaka bez jasnog redosleda, dobijaš strukturiran sistem koji te vodi od pravilnog držanja alata i prvih vežbi na lateksu, preko oblikovanja i simetrije, do kompletnog prikaza rada na različitim tipovima kože.\n\nPristup svim online kursevima aktivira se od dana kada ti paket sa materijalom bude dostavljen. Od tog trenutka imaš četiri meseca pristupa kompletnom programu.",
+      "AuraBrows online bazna obuka kreirana je za tebe ako želiš da učiš iz svog doma, svojim tempom, i da se svakoj lekciji vraćaš onoliko puta koliko ti je potrebno.\n\nDobijaš kompletan edukativni program u video formatu, pristup svim online kursevima i materijal za praktičan rad koji ti šaljemo na kućnu adresu. Ovo nije nekoliko kratkih snimaka bez jasnog redosleda, dobijaš strukturiran sistem koji te vodi od pravilnog držanja alata i prvih vežbi na lateksu, preko oblikovanja i simetrije, do kompletnog prikaza rada na različitim tipovima kože.\n\nPristup svim online kursevima aktivira se od dana kada ti paket sa materijalom bude dostavljen. Od tog trenutka imaš 60 dana pristupa kompletnom programu.",
     type: "online",
     level: "pocetni",
     price: 900,
     currency: "EUR",
-    accessDuration: "4 meseca (od prijema paketa)",
+    accessDuration: "60 dana (od prijema paketa)",
     hasCertificate: true,
     hasRatePayment: false,
     includes: [
@@ -236,7 +236,7 @@ export const courses: Course[] = [
       "Pristup kursu Lateks vežbe i pravilno držanje alata",
       "Pristup kursu Različiti položaji i rasporedi dlačica",
       "Bonus kurs fotografisanja i sređivanja radova",
-      "Četiri meseca pristupa online sadržaju",
+      "60 dana pristupa online sadržaju",
     ],
     curriculum: [
       { number: 1, title: "Oblikovanje, simetrija i teorija boja" },
@@ -267,7 +267,7 @@ export const courses: Course[] = [
     level: "svi",
     price: 99,
     currency: "EUR",
-    accessDuration: "trajno",
+    accessDuration: "60 dana",
     hasCertificate: false,
     hasRatePayment: false,
     includes: [
@@ -276,7 +276,7 @@ export const courses: Course[] = [
       "Pravilno određivanje ključnih tačaka: početak, luk, završetak obrve",
       "Prepoznavanje balansa i asimetrije",
       "Sigurniji i brži rad bez stalnog crtanja i brisanja",
-      "Trajni pristup kursu",
+      "Pristup kursu 60 dana",
     ],
     forWhom: [
       "dugo iscrtavaš obrve i stalno se vraćaš na početak",
@@ -297,10 +297,10 @@ export const courses: Course[] = [
     fullDescription:
       "Pogledaj kako izgleda kompletan profesionalni tretman, od prve procene do završnog rezultata.\n\nKada poznaješ teoriju, ali ti i dalje nedostaje sigurnost da sve korake pravilno povežeš u celinu, detaljan prikaz rada na stvarnom modelu može napraviti veliku razliku. U ovoj video-lekciji pratiš kompletan tretman na modelu sa normalnom kožom, bez preskakanja koraka i bez ubrzanih delova koji ostavljaju nejasnoće.\n\nNe posmatraš samo tehniku. Učiš kako da razmišljaš tokom tretmana, donosiš sigurnije odluke i organizuješ svoj rad tako da svaki korak ima jasno mesto i svrhu.",
     type: "online",
-    level: "pocetni",
+    level: "svi",
     price: 150,
     currency: "EUR",
-    accessDuration: "30 dana",
+    accessDuration: "60 dana",
     hasCertificate: false,
     hasRatePayment: false,
     includes: [
@@ -329,10 +329,10 @@ export const courses: Course[] = [
     fullDescription:
       "Pogledaj kako izgleda kompletan tretman na koži koja zahteva precizniju procenu i prilagođen način rada.\n\nRad na masnoj koži često donosi dodatnu nesigurnost: kako pravilno proceniti kožu, koliko pritiska koristiti, kako kontrolisati dubinu i na koji način prilagoditi tehniku da bi rezultat bio uredan i profesionalan. U ovoj video-lekciji pratiš kompletan tretman na modelu sa masnom kožom, od prve procene prirodnih obrva do završnog prikaza rezultata.\n\nUčiš kako da posmatraš kožu, donosiš sigurnije odluke tokom tretmana i prilagodiš svaki korak modelu koji se nalazi ispred tebe.",
     type: "online",
-    level: "srednji",
+    level: "svi",
     price: 150,
     currency: "EUR",
-    accessDuration: "30 dana",
+    accessDuration: "60 dana",
     hasCertificate: false,
     hasRatePayment: false,
     includes: [
@@ -359,10 +359,10 @@ export const courses: Course[] = [
     fullDescription:
       "Pogledaj kako se dlačice i ručno senčenje povezuju u skladan, prirodan i profesionalan rezultat.\n\nNekada same iscrtane dlačice nisu dovoljne da obrve dobiju potrebnu punoću, definiciju i vizuelnu ravnotežu. U ovoj video-lekciji pratiš kompletan tretman na modelu uz kombinovanje tehnike dlačica i ručnog senčenja, kako da pravilno povežeš dve tehnike, a da rezultat ne izgleda teško, prenaglašeno ili neprirodno.\n\nCilj nije da svaki tretman izgleda isto, već da naučiš kako da tehniku prilagodiš prirodnim obrvama, koži i željenom rezultatu.",
     type: "online",
-    level: "srednji",
+    level: "napredni",
     price: 150,
     currency: "EUR",
-    accessDuration: "30 dana",
+    accessDuration: "60 dana",
     hasCertificate: false,
     hasRatePayment: false,
     includes: [
@@ -393,7 +393,7 @@ export const courses: Course[] = [
     level: "pocetni",
     price: 200,
     currency: "EUR",
-    accessDuration: "30 dana",
+    accessDuration: "60 dana",
     hasCertificate: false,
     hasRatePayment: false,
     includes: [
@@ -424,7 +424,7 @@ export const courses: Course[] = [
     level: "srednji",
     price: 200,
     currency: "EUR",
-    accessDuration: "30 dana",
+    accessDuration: "60 dana",
     hasCertificate: false,
     hasRatePayment: false,
     includes: [
@@ -456,7 +456,7 @@ export const bonusCourse: Course = {
   level: "svi",
   price: 19,
   currency: "EUR",
-  accessDuration: "30 dana",
+  accessDuration: "60 dana",
   hasCertificate: false,
   hasRatePayment: false,
   includes: [

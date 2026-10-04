@@ -7,11 +7,11 @@ import { buildPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Kursevi",
   description:
-    "Edukacije uživo i online video kursevi za oblikovanje i puder tehniku obrva. Doživotni pristup, sertifikat i mentorstvo.",
+    "Edukacije uživo i online video kursevi za oblikovanje i puder tehniku obrva. Pristup samostalnim online kursevima traje 60 dana.",
   ...buildPageMetadata({
     title: "Kursevi | AuraBrows by Saška",
     description:
-      "Edukacije uživo i online video kursevi za oblikovanje i puder tehniku obrva. Doživotni pristup, sertifikat i mentorstvo.",
+      "Edukacije uživo i online video kursevi za oblikovanje i puder tehniku obrva. Pristup samostalnim online kursevima traje 60 dana.",
     path: "/kursevi",
     image: `https://aurabrowsbysaska.rs${courseImages["aurabrows-bazna-obuka"].src}`,
   }),
@@ -31,7 +31,7 @@ export default function KurseviPage() {
           </h1>
           <div className="w-20 h-px bg-accent-gold/60 mx-auto mb-5" />
           <p className="text-text-secondary">
-            Doživotni pristup, sertifikat i privatna zajednica uz svaki kurs.
+            Pristup samostalnim online kursevima traje 60 dana.
           </p>
         </div>
 
