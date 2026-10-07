@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -10,13 +9,6 @@ import {
   getWebsiteSchema,
 } from "@/lib/structured-data";
 import { buildPageMetadata } from "@/lib/metadata";
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aurabrowsbysaska.rs"),
@@ -41,7 +33,7 @@ export default function RootLayout({
   const structuredData = [getOrganizationSchema(), getWebsiteSchema()];
 
   return (
-    <html lang="sr" className={`${cormorant.variable} h-full antialiased`}>
+    <html lang="sr" className="h-full antialiased">
       <head>
         <script
           type="application/ld+json"
