@@ -96,16 +96,18 @@ export default function Home() {
       {/* 2. STATS BAR */}
       <section className="border-y border-border">
         <div className="container-aura py-6">
-          <div className="mx-auto max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="mx-auto max-w-5xl grid grid-cols-1 min-[350px]:grid-cols-2 md:grid-cols-4 gap-4">
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="card-border bg-bg-card/50 px-6 py-8 text-center"
+                className="card-border bg-bg-card/50 min-w-0 min-h-32 flex flex-col items-center justify-center px-3 sm:px-4 py-6 text-center"
               >
-                <p className="text-3xl md:text-4xl font-semibold text-accent-gold mb-1">
-                  {s.value}
-                </p>
-                <p className="text-xs uppercase tracking-wider text-text-secondary">
+                {s.value && (
+                  <p className="text-3xl md:text-4xl font-semibold text-accent-gold mb-1">
+                    {s.value}
+                  </p>
+                )}
+                <p className="max-w-full text-[11px] sm:text-xs leading-snug uppercase tracking-[0.08em] sm:tracking-wider text-text-secondary [overflow-wrap:anywhere]">
                   {s.label}
                 </p>
               </div>
@@ -146,7 +148,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-2xl font-semibold text-accent-gold">
-                  1200+
+                  2000+
                 </p>
                 <p className="text-xs uppercase tracking-wider text-text-secondary">
                   polaznica online kursa

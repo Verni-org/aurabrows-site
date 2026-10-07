@@ -80,12 +80,6 @@ export default function KontaktPage() {
           </div>
 
           <div className="order-3 md:order-none md:self-start card-border bg-bg-card p-5 sm:p-6">
-            <h2 className="text-lg font-semibold mb-2">
-              Prijavi se na <span className="accent">listu</span>
-            </h2>
-            <p className="text-text-secondary text-sm mb-5">
-              Prva saznaj za nove termine, kurseve i pogodnosti.
-            </p>
             <NewsletterForm />
           </div>
         </div>

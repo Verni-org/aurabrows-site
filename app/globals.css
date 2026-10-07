@@ -188,3 +188,11 @@ body {
 .testimonial-dialog::backdrop {
   background: rgb(0 0 0 / 85%);
 }
+
+.newsletter-form .d-none {
+  display: none;
+}
+
+.newsletter-form .ml-error input {
+  border-color: #f87171;
+}

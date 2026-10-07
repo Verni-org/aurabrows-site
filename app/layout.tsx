@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
@@ -52,6 +53,10 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Script
+          src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

@@ -24,7 +24,6 @@ export default function Footer() {
             Online akademija obrva. Premium video kursevi za buduće majstore
             zanata.
           </p>
-          <p className="label mb-3">Prijavi se na listu</p>
           <div className="max-w-sm">
             <NewsletterForm />
           </div>
