@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ScrollToTopOnRouteChange from "@/components/ScrollToTopOnRouteChange";
+import NewsletterPopup from "@/components/NewsletterPopup";
 import {
   getOrganizationSchema,
   getWebsiteSchema,
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <NewsletterPopup />
         <Script
           src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"
           strategy="lazyOnload"

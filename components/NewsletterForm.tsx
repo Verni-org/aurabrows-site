@@ -8,7 +8,11 @@ const subscribeUrl =
 const inputClassName =
   "w-full min-w-0 bg-transparent border border-border rounded px-4 py-3 text-base sm:text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-accent-gold";
 
-export default function NewsletterForm() {
+export default function NewsletterForm({
+  showName = true,
+}: {
+  showName?: boolean;
+}) {
   const formId = useId();
   const formRef = useRef<HTMLFormElement>(null);
   const [ready, setReady] = useState(false);
@@ -61,16 +65,18 @@ export default function NewsletterForm() {
         }}
         className="ml-block-form flex flex-col gap-3"
       >
-        <label className="ml-field-name">
-          <span className="sr-only">Tvoje ime</span>
-          <input
-            name="fields[name]"
-            type="text"
-            placeholder="Tvoje ime"
-            autoComplete="given-name"
-            className={inputClassName}
-          />
-        </label>
+        {showName && (
+          <label className="ml-field-name">
+            <span className="sr-only">Tvoje ime</span>
+            <input
+              name="fields[name]"
+              type="text"
+              placeholder="Tvoje ime"
+              autoComplete="given-name"
+              className={inputClassName}
+            />
+          </label>
+        )}
 
         <label className="ml-field-email ml-validate-email ml-validate-required">
           <span className="sr-only">Tvoj email</span>
@@ -129,9 +135,6 @@ export default function NewsletterForm() {
           className={`primary btn-primary w-full !px-5 !py-3 ${ready ? "" : "opacity-50 cursor-not-allowed"}`}
         >
           {ready ? "Pridruži se" : "Učitavanje..."}
-        </button>
-        <button type="button" disabled className="loading btn-primary w-full !px-5 !py-3 hidden">
-          Slanje...
         </button>
       </form>
 
