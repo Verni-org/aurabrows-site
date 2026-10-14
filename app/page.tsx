@@ -25,7 +25,7 @@ const previewCourses = previewSlugs
   .sort((a, b) => levelOrder[a.level] - levelOrder[b.level]);
 
 const stats = [
-  { value: "2000+", label: "zadovoljnih polaznica" },
+  { value: "2000+", label: "zadovoljnih klijenata" },
   { value: "15", label: "godina iskustva" },
   { value: "50+", label: "edukovanih polaznica" },
   { value: "", label: "Nagrađivani studenti, rezultati koji govore dalje" },
